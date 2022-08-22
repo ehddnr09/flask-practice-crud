@@ -36,15 +36,15 @@
     <script defer src="/static/js/jquery.js"></script>
   </head>
   <body>
+    <div class="header">
+      <img
+        src="/static/img/icon.png"
+        alt="icon"
+        style="height: 50px; width: 50px"
+      />
+      <span>당당마켓</span>
+    </div>
     <div class="product-list">
-      <div class="header">
-        <img
-          src="/static/img/icon.png"
-          alt="icon"
-          style="height: 50px; width: 50px"
-        />
-        <span>당당마켓</span>
-      </div>
       <div class="list-group list-group-flush">
         {% for market in markets %}
         <a
@@ -80,14 +80,7 @@
         </a>
         {% endfor %}
       </div>
-      <a
-        href="/upload"
-        role="button"
-        class="btn btn-warning"
-        style="width: 100%"
-      >
-        상품 등록
-      </a>
+      <a href="/upload" role="button" class="btn btn-warning"> 상품 등록 </a>
     </div>
   </body>
 </html>
